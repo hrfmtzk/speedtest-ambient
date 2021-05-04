@@ -1,0 +1,8 @@
+[Unit]
+Description=SpeedTest for Ambient
+
+[Timer]
+onCalendar=*-*-* *:0/5:00
+
+[Install]
+WantedBy=multi-user.target

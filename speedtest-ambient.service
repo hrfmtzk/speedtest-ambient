@@ -1,0 +1,13 @@
+[Unit]
+Description=SpeedTest for Ambient
+After=network.target
+
+[Service]
+Type=oneshot
+Environment=AMBIENT_CHANNEL_ID=99999
+Environment=AMBIENT_WRITE_KEY=0123456789abcdef
+WorkingDirectory=/path/to/project
+ExecStart=/path/to/venv/python app.py
+
+[Install]
+WantedBy=multi-user.target
