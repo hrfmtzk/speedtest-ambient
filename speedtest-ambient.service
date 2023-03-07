@@ -6,6 +6,7 @@ After=network.target
 Type=oneshot
 Environment=AMBIENT_CHANNEL_ID=99999
 Environment=AMBIENT_WRITE_KEY=0123456789abcdef
+Environment=SPEEDTEST_SERVER=21569
 WorkingDirectory=/path/to/project
 ExecStart=/path/to/venv/python app.py
 
